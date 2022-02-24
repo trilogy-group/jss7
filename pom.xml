@@ -518,7 +518,7 @@
 		<repository>
 			<id>java.net-Public</id>
 			<name>Maven Java Net Snapshots and Releases</name>
-			<url>http://download.java.net/maven/2/</url>
+			<url>https://maven.java.net/content/groups/public/</url>
 			<releases>
 				<enabled>true</enabled>
 				<updatePolicy>never</updatePolicy>
@@ -532,7 +532,7 @@
 		<repository>
 			<id>datanucleus</id>
 			<name>DataNucleus Releases</name>
-			<url>http://www.datanucleus.org/downloads/maven2</url>
+			<url>https://www.datanucleus.org/downloads/maven2</url>
 			<releases>
 				<enabled>true</enabled>
 				<updatePolicy>never</updatePolicy>

@@ -1,3 +1,5 @@
+release/checkout
+
 # ignore .svn metadata files
 .svn
 # ignore Maven generated target folders

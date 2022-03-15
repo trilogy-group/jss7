@@ -2,5 +2,5 @@ FROM devfactory/workspace-full
 
 USER root
 
-RUN sudo apt update
-RUN sudo apt install ant
+RUN sudo apt -y update
+RUN sudo apt -y install ant

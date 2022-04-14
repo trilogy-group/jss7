@@ -13,6 +13,11 @@
 	<artifactId>scheduler</artifactId>
 	<name>Restcomm jSS7 :: Scheduler :: ${project.artifactId}</name>
 
+	<properties>
+    	<maven.compiler.source>1.8</maven.compiler.source>
+    	<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
 	<dependencies>
                 <!-- non restcomm -->
                 <dependency>
@@ -29,8 +34,8 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 			<plugin>

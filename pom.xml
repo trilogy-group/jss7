@@ -32,7 +32,10 @@
 		<testng.version>6.2</testng.version>
 		<javolution.version>5.5.1</javolution.version>
 		<compiler.plugin.version>3.0</compiler.plugin.version>
-		<compile.source>1.8</compile.source>
+
+	    <maven.compiler.source>1.8</maven.compiler.source>
+   		<maven.compiler.target>1.8</maven.compiler.target>
+ 
 		<!-- restcomm but not strictly ss7 -->
 		<asn.version>2.2.0-143</asn.version>
 		<stream.version>1.0.0.CR1</stream.version>
@@ -518,7 +521,7 @@
 		<repository>
 			<id>java.net-Public</id>
 			<name>Maven Java Net Snapshots and Releases</name>
-			<url>https://maven.java.net/content/groups/public/</url>
+			<url>http://download.java.net/maven/2/</url>
 			<releases>
 				<enabled>true</enabled>
 				<updatePolicy>never</updatePolicy>
@@ -532,7 +535,7 @@
 		<repository>
 			<id>datanucleus</id>
 			<name>DataNucleus Releases</name>
-			<url>https://www.datanucleus.org/downloads/maven2</url>
+			<url>http://www.datanucleus.org/downloads/maven2</url>
 			<releases>
 				<enabled>true</enabled>
 				<updatePolicy>never</updatePolicy>

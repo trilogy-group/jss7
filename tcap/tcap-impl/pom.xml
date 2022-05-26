@@ -40,10 +40,24 @@
 			<groupId>org.restcomm.protocols.ss7.statistics</groupId>
 			<artifactId>statistics-impl</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.restcomm.protocols.ss7.congestion</groupId>
+			<artifactId>congestion</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.restcomm.protocols.ss7.sccp</groupId>
+			<artifactId>sccp-impl</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.restcomm.protocols.ss7.sccp</groupId>
 			<artifactId>sccp-api</artifactId>
+			<version>${project.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>tcap-api</artifactId>
@@ -72,7 +86,6 @@
 
 				<configuration>
 					<suiteXmlFiles>
-						<!-- -->
 						<suiteXmlFile>testng-methods.xml</suiteXmlFile>
 
 						<suiteXmlFile>testng-classes.xml</suiteXmlFile>
@@ -100,7 +113,7 @@
 	</build>
 
 	<profiles>
-		<profile>
+		<!--profile>
 			<id>test</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
@@ -128,7 +141,7 @@
 					<scope>test</scope>
 				</dependency>
 			</dependencies>
-		</profile>
+		</profile-->
 		<profile>
 			<activation>
 				<property>

@@ -28,6 +28,7 @@
 		<dependency>
 			<groupId>org.restcomm.protocols.ss7.sccp</groupId>
 			<artifactId>sccp-api</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mobicents.protocols.asn</groupId>
@@ -89,7 +90,7 @@
 	</build>
 
 	<profiles>
-		<profile>
+		<!--profile>
 			<id>test</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
@@ -117,7 +118,7 @@
 					<scope>test</scope>
 				</dependency>
 			</dependencies>
-		</profile>
+		</profile-->
 		<profile>
 			<activation>
 				<property>

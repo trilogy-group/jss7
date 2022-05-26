@@ -17,8 +17,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-		<!-- maven.test.skip>false</maven.test.skip -->
+		<maven.test.skip>true</maven.test.skip>
 		<restcomm.tools.mavenplugin.eclipse.version>
 			1.0.0.FINAL
 		</restcomm.tools.mavenplugin.eclipse.version>
@@ -39,10 +38,11 @@
 		<!-- restcomm but not strictly ss7 -->
 		<asn.version>2.2.0-143</asn.version>
 		<stream.version>1.0.0.CR1</stream.version>
-		<sctp.version>2.0.0-166</sctp.version>
+		<!--sctp.version>2.0.0-166</sctp.version-->
+		<sctp.version>3.0.0</sctp.version>
 		<commons.version>1.0.0.CR1</commons.version>
-		<netty.version>4.0.33.Final</netty.version>
-
+		<!--netty.version>4.0.33.Final</netty.version-->
+		<netty.version>4.1.76.Final</netty.version>
 
 		<version.wildfly.as>10.1.0.Final</version.wildfly.as>
 		<version.wildfly.core>2.2.0.Final</version.wildfly.core>
@@ -61,14 +61,14 @@
 		<module>isup</module>
 		<module>sccp</module>
 		<module>tcap</module>
-		<module>tcap-ansi</module>
+		<!--module>tcap-ansi</module-->
 		<module>map</module>
-		<module>inap</module>
+		<!--module>inap</module>
 		<module>cap</module>
 
 		<module>service</module>
 
-		<module>tools</module>
+		<module>tools</module-->
 	</modules>
 
 	<!-- declare our babies -->
@@ -94,13 +94,13 @@
 			</dependency>
 			<!-- SCTP -->
 			<dependency>
-				<groupId>org.mobicents.protocols.sctp</groupId>
+				<groupId>org.mobicents.sctp</groupId>
 				<artifactId>sctp-api</artifactId>
 				<version>${sctp.version}</version>
 			</dependency>
 
 			<dependency>
-				<groupId>org.mobicents.protocols.sctp</groupId>
+				<groupId>org.mobicents.sctp</groupId>
 				<artifactId>sctp-impl</artifactId>
 				<version>${sctp.version}</version>
 			</dependency>
@@ -504,6 +504,10 @@
 	</scm>
 	<!-- repositories -->
 	<repositories>
+		<repository>
+			<id>local-maven-repo</id>
+			<url>file:///tmp/local-maven-repo</url>
+		</repository>
 		<repository>
 			<id>restcomm-public-repository-group</id>
 			<name>Restcomm Public Maven Repository Group</name>
